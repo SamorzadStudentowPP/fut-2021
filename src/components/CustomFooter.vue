@@ -24,32 +24,10 @@
       </v-card-text>
 
       <v-card-text class="white--text pt-0">
-        <!--<a href="public/rules/Regulamin_Karpicko_2021.pdf" target="_blank" style="color: white;" download>Regulamin</a> |
-        <a href="public/rules/Zasady_bezpieczenstwa.pdf" target="_blank" style="color: white;" download>Zasady Bezpieczeństwa</a> |
-        <a href="public/rules/Polityka_prywatnosci.pdf"  target="_blank" style="color: white;" download>Polityka Prywatności</a>-->
-
         <v-row align="center" justify="center" class="mt-1">
           <v-btn
             download
-            href="/rules/Regulamin_Karpicko_2021.docx"
-            class=" text-button"
-            plain
-          >
-            Regulamin
-          </v-btn>
-
-          <v-btn
-            download
-            href="/rules/Zasady_bezpieczenstwa.docx"
-            class="text-button"
-            plain
-          >
-            Zasady bezpieczeństwa
-          </v-btn>
-
-          <v-btn
-            download
-            href="/rules/Polityka_prywatnosci.docx"
+            href=""
             class="text-button"
             plain
           >
@@ -75,7 +53,7 @@ export default {
     icons: [
       {
         fa: 'fab fa-facebook',
-        url: 'https://www.facebook.com/events/140145264887833',
+        url: 'https://www.facebook.com/SamorzadStudentowPolitechnikiPoznanskiej',
       },
       {
         fa: 'fab fa-instagram',

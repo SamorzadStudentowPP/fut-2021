@@ -40,7 +40,7 @@ export default {
   metaInfo() {
     return {
       title:
-        'Karpicko 2021 - Obóz Integracyjno-Szkoleniowy Politechniki Poznańskiej',
+        'Zjazd FUT 2021 na Politechnice Poznańskiej',
     };
   },
 };

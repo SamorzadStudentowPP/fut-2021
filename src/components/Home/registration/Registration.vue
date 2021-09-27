@@ -2,7 +2,7 @@
   <div id="registration">
     <v-parallax
       dark
-      src="@/assets/invitation/karpicko2019_gracze.jpg"
+      src="@/assets/university/wtch.jpg"
       height="350"
     >
       <v-row align="center" justify="center">

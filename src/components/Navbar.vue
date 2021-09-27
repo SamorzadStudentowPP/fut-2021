@@ -29,7 +29,7 @@
             alt="sspp-name"
             contain
             min-width="10"
-            src="@/assets/other/logo_sspp_white_narrow.png"
+            src="@/assets/other/FUT_white.png"
             width="90"
           />
         </v-btn>
@@ -159,11 +159,11 @@ export default {
   },
   data() {
     return {
-      appTitle: 'Karpicko 2021',
+      appTitle: 'FUT PP 2021',
       drawer: false,
       navbarColor: 'transparent',
       navbarElevation: 0,
-      main: { title: 'Karpicko 2021', id: '#hero' },
+      main: { title: 'FUT 2021', id: '#hero' },
       mainpage: { title: 'Strona główna', url: '#/' },
       items: [
         { title: 'Rekrutacja', id: '#invitation' },
