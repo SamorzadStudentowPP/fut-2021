@@ -1,29 +1,29 @@
 <template>
   <div id="rules">
     <v-container fluid>
-      <component-title text="Regulamin" />
+      <component-title text="Regulamin"/>
       <v-row align="center" justify="center">
         <v-btn
-          href="/rules/Regulamin_Karpicko_2021.docx"
-          download
-          outlined
-          rounded
-          color="primary"
-          x-large
-          class="mt-8 text-button"
+            class="mt-8 text-button"
+            color="primary"
+            download
+            href="/rules/Regulamin_Karpicko_2021.docx"
+            outlined
+            rounded
+            x-large
         >
           Regulamin
         </v-btn>
       </v-row>
       <v-row align="center" justify="center">
         <v-btn
-          download
-          href="/rules/Zasady_bezpieczeństwa.docx"
-          outlined
-          rounded
-          color="primary"
-          x-large
-          class="mt-4 text-button"
+            class="mt-4 text-button"
+            color="primary"
+            download
+            href="/rules/Zasady_bezpieczeństwa.docx"
+            outlined
+            rounded
+            x-large
         >
           Zasady bezpieczeństwa
         </v-btn>
@@ -34,9 +34,10 @@
 
 <script>
 import ComponentTitle from '@/components/ComponentTitle';
+
 export default {
   name: 'Rules',
-  components: { ComponentTitle },
+  components: {ComponentTitle},
 };
 </script>
 

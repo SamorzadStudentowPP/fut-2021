@@ -1,9 +1,9 @@
 <template>
   <div class="elevation-5 pa-3 justify-center align-center text-center">
     <v-img
-      :src="require(`@/assets/${src}`)"
-      :alt="description"
-      :aspect-ratio="1 / 1"
+        :alt="description"
+        :aspect-ratio="1 / 1"
+        :src="require(`@/assets/${src}`)"
     />
     <p class="body-1 mt-5 text-uppercase text-h6">
       {{ description }}

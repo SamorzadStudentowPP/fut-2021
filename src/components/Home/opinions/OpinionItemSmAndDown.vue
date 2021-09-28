@@ -2,25 +2,25 @@
   <div>
     <v-row justify="center">
       <v-col
-        cols="6"
-        sm="4"
-        class="d-flex justify-center text-center align-center"
+          class="d-flex justify-center text-center align-center"
+          cols="6"
+          sm="4"
       >
         <v-img
-          :src="require(`@/assets/opinions/${src}`)"
-          :aspect-ratio="1 / 1"
-          max-width="250"
-          min-width="250"
-          id="opinion_avatar_sm"
-          class="hidden-xs-only"
+            id="opinion_avatar_sm"
+            :aspect-ratio="1 / 1"
+            :src="require(`@/assets/opinions/${src}`)"
+            class="hidden-xs-only"
+            max-width="250"
+            min-width="250"
         />
         <v-img
-          :src="require(`@/assets/opinions/${src}`)"
-          :aspect-ratio="1 / 1"
-          max-width="188"
-          min-width="188"
-          id="opinion_avatar_xs"
-          class="hidden-sm-only"
+            id="opinion_avatar_xs"
+            :aspect-ratio="1 / 1"
+            :src="require(`@/assets/opinions/${src}`)"
+            class="hidden-sm-only"
+            max-width="188"
+            min-width="188"
         />
       </v-col>
     </v-row>
@@ -50,6 +50,7 @@ export default {
 #opinion_avatar_sm {
   border-radius: 50%;
 }
+
 #opinion_avatar_xs {
   border-radius: 50%;
 }

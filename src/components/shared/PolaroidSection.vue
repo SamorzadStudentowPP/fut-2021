@@ -1,34 +1,34 @@
 <template>
   <v-container fluid>
-    <v-row justify="center" align="center">
+    <v-row align="center" justify="center">
       <v-col cols="11" lg="8" md="9">
-        <v-row justify="center" align="center">
+        <v-row align="center" justify="center">
           <v-col
-            cols="12"
-            xl="6"
-            lg="6"
-            md="6"
-            sm="10"
-            class="align-content-center"
-            :order-lg="reversed ? 'last' : ''"
-            :order="reversed ? 'first' : ''"
-            :offset-lg="reversed ? 1 : 0"
+              :offset-lg="reversed ? 1 : 0"
+              :order="reversed ? 'first' : ''"
+              :order-lg="reversed ? 'last' : ''"
+              class="align-content-center"
+              cols="12"
+              lg="6"
+              md="6"
+              sm="10"
+              xl="6"
           >
             <h2
-              class="text-sm-h5 text-md-h5 text-lg-h5 text-xl-h5 text-subtitle-1 headline text-center"
+                class="text-sm-h5 text-md-h5 text-lg-h5 text-xl-h5 text-subtitle-1 headline text-center"
             >
               {{ text }}
             </h2>
           </v-col>
           <v-col
-            cols="12"
-            xl="4"
-            lg="5"
-            md="6"
-            sm="7"
-            :offset-lg="reversed ? 0 : 1"
+              :offset-lg="reversed ? 0 : 1"
+              cols="12"
+              lg="5"
+              md="6"
+              sm="7"
+              xl="4"
           >
-            <polaroid-image :src="src" :description="polaroid_text" />
+            <polaroid-image :description="polaroid_text" :src="src"/>
           </v-col>
         </v-row>
       </v-col>
@@ -41,12 +41,12 @@ import PolaroidImage from '@/components/shared/PolaroidImage';
 
 export default {
   name: 'PoloaridSection',
-  components: { PolaroidImage },
+  components: {PolaroidImage},
   props: {
     text: String,
     src: String,
     polaroid_text: String,
-    reversed: { type: Boolean, default: false },
+    reversed: {type: Boolean, default: false},
   },
 };
 </script>

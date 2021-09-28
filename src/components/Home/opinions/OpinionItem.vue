@@ -1,18 +1,18 @@
 <template>
   <v-row justify="center">
-    <v-col cols="4" class="d-flex justify-center text-center align-center">
+    <v-col class="d-flex justify-center text-center align-center" cols="4">
       <v-img
-        :aspect-ratio="1 / 1"
-        :src="require(`@/assets/opinions/${src}`)"
-        min-width="250"
-        max-width="250"
-        id="opinion_avatar"
-        class="justify-center"
+          id="opinion_avatar"
+          :aspect-ratio="1 / 1"
+          :src="require(`@/assets/opinions/${src}`)"
+          class="justify-center"
+          max-width="250"
+          min-width="250"
       />
     </v-col>
     <v-col
-      cols="6"
-      class="d-flex justify-center text-center align-center flex-column"
+        class="d-flex justify-center text-center align-center flex-column"
+        cols="6"
     >
       <blockquote class="blockquote text-h5 black--text">
         {{ quote }}

@@ -1,35 +1,36 @@
 <template>
   <div id="partners">
-    <v-container fluid class="mb-10">
-      <component-title text="Organizatorzy i Partnerzy" class=" mt-10" />
-      <v-row class="mt-10" align="start" justify="center" no-gutters>
+    <v-container class="mb-10" fluid>
+      <component-title class=" mt-10" text="Patroni honorowi"/>
+      <v-row align="start" class="mt-10" justify="center" no-gutters>
         <v-col cols="12" lg="10" md="10">
-          <v-row class="mt-10" align="start" justify="center" no-gutters>
+          <v-row align="start" class="mt-10" justify="center" no-gutters>
             <v-col
-              cols="10"
-              lg="3"
-              md="4"
-              sm="5"
-              v-for="(item, index) in organizerList"
-              :key="index"
+                v-for="(item, index) in honoredList"
+                :key="index"
+                cols="10"
+                lg="3"
+                md="4"
+                sm="5"
             >
-              <organizer-card :src="item.src" />
+              <organizer-card :src="item.src"/>
             </v-col>
           </v-row>
         </v-col>
       </v-row>
-      <v-row class="mt-10" align="start" justify="center" no-gutters>
+      <component-title class=" mt-10" text="Partnerzy"/>
+      <v-row align="start" class="mt-10" justify="center" no-gutters>
         <v-col cols="12" lg="10" md="10">
-          <v-row class="mt-10" align="start" justify="center" no-gutters>
+          <v-row align="start" class="mt-10" justify="center" no-gutters>
             <v-col
-              cols="6"
-              lg="2"
-              md="3"
-              sm="4"
-              v-for="(item, index) in partnerList"
-              :key="index"
+                v-for="(item, index) in partnerList"
+                :key="index"
+                cols="6"
+                lg="2"
+                md="3"
+                sm="4"
             >
-              <partner-card :src="item.src" />
+              <partner-card :src="item.src"/>
             </v-col>
           </v-row>
         </v-col>
@@ -42,12 +43,13 @@
 import OrganizerCard from '@/components/Home/partners/OrganizerCard';
 import ComponentTitle from '@/components/shared/ComponentTitle';
 import PartnerCard from '@/components/Home/partners/PartnerCard';
+
 export default {
   name: 'Partners',
-  components: { PartnerCard, ComponentTitle, OrganizerCard },
+  components: {PartnerCard, ComponentTitle, OrganizerCard},
   data() {
     return {
-      organizerList: [
+      honoredList: [
         {
           src: 'pp.png',
         },

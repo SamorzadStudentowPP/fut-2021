@@ -1,22 +1,22 @@
 <template>
   <div id="crew">
-    <v-container fluid class="mb-10">
-      <component-title text="Kadra" />
-      <v-row class="mt-10" align="start" justify="center" no-gutters>
+    <v-container class="mb-10" fluid>
+      <component-title text="Kadra"/>
+      <v-row align="start" class="mt-10" justify="center" no-gutters>
         <v-col cols="12" lg="10" md="10">
-          <v-row class="mt-10" align="start" justify="center" no-gutters>
+          <v-row align="start" class="mt-10" justify="center" no-gutters>
             <v-col
-              cols="6"
-              lg="2"
-              md="3"
-              sm="4"
-              v-for="(item, index) in crew"
-              :key="index"
+                v-for="(item, index) in crew"
+                :key="index"
+                cols="6"
+                lg="2"
+                md="3"
+                sm="4"
             >
               <crew-card
-                :name="item.name"
-                :faculty="item.faculty"
-                :avatar="item.avatar"
+                  :avatar="item.avatar"
+                  :faculty="item.faculty"
+                  :name="item.name"
               />
             </v-col>
           </v-row>
@@ -29,9 +29,10 @@
 <script>
 import CrewCard from './CrewCard';
 import ComponentTitle from '@/components/shared/ComponentTitle';
+
 export default {
   name: 'Crew',
-  components: { ComponentTitle, CrewCard },
+  components: {ComponentTitle, CrewCard},
   data() {
     return {
       crew: [

@@ -1,21 +1,21 @@
 <template>
   <div id="agenda">
     <v-container fluid>
-      <component-title text="Harmonogram" />
+      <component-title text="Harmonogram"/>
       <v-row align="center" justify="center">
-        <v-col cols="11" md="10" H>
+        <v-col H cols="11" md="10">
           <v-timeline
-            align-top
-            class="mt-5"
-            :dense="$vuetify.breakpoint.smAndDown"
+              :dense="$vuetify.breakpoint.smAndDown"
+              align-top
+              class="mt-5"
           >
             <v-timeline-item
-              color="primary"
-              fill-dot
-              v-for="(day, index) in days"
-              :key="index"
+                v-for="(day, index) in days"
+                :key="index"
+                color="primary"
+                fill-dot
             >
-              <agenda-item :title="day.title" :day-agenda="day.dayAgenda" />
+              <agenda-item :day-agenda="day.dayAgenda" :title="day.title"/>
             </v-timeline-item>
           </v-timeline>
         </v-col>
@@ -27,9 +27,10 @@
 <script>
 import AgendaItem from './AgendaItem';
 import ComponentTitle from '@/components/shared/ComponentTitle';
+
 export default {
   name: 'Agenda',
-  components: { ComponentTitle, AgendaItem },
+  components: {ComponentTitle, AgendaItem},
   data() {
     return {
       days: [

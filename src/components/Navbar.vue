@@ -1,24 +1,24 @@
 <template>
   <span>
     <v-app-bar
-      app
-      :color="currentRouteName ? navbarColor : 'primary'"
-      dark
-      flat
-      :elevation="currentRouteName ? navbarElevation : 50"
+        :color="currentRouteName ? navbarColor : 'primary'"
+        :elevation="currentRouteName ? navbarElevation : 50"
+        app
+        dark
+        flat
     >
       <v-app-bar-nav-icon
-        class="hidden-lg-and-up"
-        @click="drawer = !drawer"
+          class="hidden-lg-and-up"
+          @click="drawer = !drawer"
       ></v-app-bar-nav-icon>
       <v-spacer class=" hidden-lg-and-up"></v-spacer>
       <div class="d-flex align-center">
         <v-btn
-          text
-          block
-          x-large
-          href="#/"
-          @click="
+            block
+            href="#/"
+            text
+            x-large
+            @click="
             () => {
               $vuetify.goTo(0);
               $vuetify.goTo(main.id);
@@ -26,43 +26,43 @@
           "
         >
           <v-img
-            alt="sspp-name"
-            contain
-            min-width="10"
-            src="@/assets/other/FUT_white.png"
-            width="90"
+              alt="sspp-name"
+              contain
+              min-width="100"
+              src="@/assets/other/FUT_white.png"
+              width="200"
           />
         </v-btn>
       </div>
-      <v-spacer />
+      <v-spacer/>
       <template v-if="currentRouteName == '/'">
         <div v-for="(item, index) in items" :key="index">
           <v-btn
-            text
-            class="hidden-md-and-down text-button"
-            elevation="0"
-            @click="$vuetify.goTo(item.id)"
-            >{{ item.title }}</v-btn
+              class="hidden-md-and-down text-button"
+              elevation="0"
+              text
+              @click="$vuetify.goTo(item.id)"
+          >{{ item.title }}</v-btn
           >
         </div>
       </template>
       <template v-else>
         <div>
           <v-btn
-            text
-            class="hidden-md-and-down text-button"
-            elevation="0"
-            :href="mainpage.url"
-            >{{ mainpage.title }}</v-btn
+              :href="mainpage.url"
+              class="hidden-md-and-down text-button"
+              elevation="0"
+              text
+          >{{ mainpage.title }}</v-btn
           >
         </div>
       </template>
       <div v-for="page in pages" :key="page.title">
         <v-btn
-          text
-          class="hidden-md-and-down text-button"
-          elevation="0"
-          :href="page.url"
+            :href="page.url"
+            class="hidden-md-and-down text-button"
+            elevation="0"
+            text
         >
           {{ page.title }}
         </v-btn>
@@ -70,15 +70,15 @@
     </v-app-bar>
 
     <v-navigation-drawer
-      app
-      v-model="drawer"
-      class="primary"
-      dark
-      disable-resize-watcher
+        v-model="drawer"
+        app
+        class="primary"
+        dark
+        disable-resize-watcher
     >
       <v-list>
         <v-list-item
-          @click="
+            @click="
             {
               $vuetify.goTo(0);
               $vuetify.goTo(main.id);
@@ -87,11 +87,11 @@
         >
           <div class="d-flex align-center">
             <v-btn
-              text
-              block
-              x-large
-              href="#/"
-              @click="
+                block
+                href="#/"
+                text
+                x-large
+                @click="
                 () => {
                   $vuetify.goTo(0);
                   $vuetify.goTo(main.id);
@@ -99,20 +99,20 @@
               "
             >
               <v-img
-                alt="Fut-name"
-                contain
-                min-width="10"
-                src="@/assets/other/logo_sspp_white_narrow.png"
-                width="90"
+                  alt="Fut-name"
+                  contain
+                  min-width="100"
+                  src="@/assets/other/FUT_white.png"
+                  width="170"
               />
             </v-btn>
           </div>
         </v-list-item>
         <template v-if="currentRouteName == '/'">
           <v-list-item
-            v-for="item in items"
-            :key="item.title"
-            @click="$vuetify.goTo(item.id)"
+              v-for="item in items"
+              :key="item.title"
+              @click="$vuetify.goTo(item.id)"
           >
             <v-list-item-content>
               <v-list-item-title>{{ item.title }}</v-list-item-title>
@@ -129,10 +129,10 @@
           </v-list-item>
           <div>
             <v-btn
-              text
-              class="hidden-md-and-down text-button"
-              elevation="0"
-              >{{
+                class="hidden-md-and-down text-button"
+                elevation="0"
+                text
+            >{{
             }}</v-btn>
           </div>
         </template>
@@ -163,17 +163,20 @@ export default {
       drawer: false,
       navbarColor: 'transparent',
       navbarElevation: 0,
-      main: { title: 'FUT 2021', id: '#hero' },
-      mainpage: { title: 'Strona główna', url: '#/' },
+      main: {title: 'FUT 2021', id: '#hero'},
+      mainpage: {title: 'Strona główna', url: '#/'},
       items: [
-        { title: 'Rekrutacja', id: '#invitation' },
-        { title: 'Atrakcje', id: '#about' },
-        { title: 'Zakwaterowanie', id: '#accommodation' },
-        { title: 'Opinie', id: '#opinions' },
-        { title: 'Kontakt', id: '#contact' },
-        { title: 'Partnerzy', id: '#partners' },
+        {title: 'Zjazd', id: '#info'},
+        {title: 'Rejestracja', id: '#registration'},
+        {title: 'O SSPP', id: '#studentsUnion'},
+        {title: 'O Politechnice', id: '#university'},
+        {title: 'Harmonogram', id: '#agenda'},
+        {title: 'Zakwaterowanie', id: '#accommodation'},
+        {title: 'Ciekawostki', id: '#curiosity'},
+        {title: 'Koordynator', id: '#coordinator'},
+        {title: 'Patronaty', id: '#partners'},
       ],
-      pages: [{ title: 'Kadra', url: '#/kadra' }],
+      pages: [],
     };
   },
   computed: {
@@ -185,8 +188,8 @@ export default {
     changeColor() {
       if (
         this.currentRouteName != '/' ||
-        document.body.scrollTop > 85 ||
-        document.documentElement.scrollTop > 85
+          document.body.scrollTop > 85 ||
+          document.documentElement.scrollTop > 85
       ) {
         this.navbarColor = 'primary';
         this.navbarElevation = 10;

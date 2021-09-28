@@ -1,10 +1,10 @@
 <template>
   <v-card class="elevation-0 transparent justify-center text-center">
     <v-card-text class="text-xs-center hidden-xs-only">
-      <img :src="require(`@/assets/partners/${src}`)" height="200" />
+      <img :src="require(`@/assets/partners/${src}`)" height="200"/>
     </v-card-text>
     <v-card-text class="text-xs-center hidden-sm-and-up">
-      <img :src="require(`@/assets/partners/${src}`)" height="150" />
+      <img :src="require(`@/assets/partners/${src}`)" height="150"/>
     </v-card-text>
   </v-card>
 </template>
