@@ -6,7 +6,7 @@
           <v-col
               :offset-lg="reversed ? 1 : 0"
               :order="reversed ? 'first' : ''"
-              :order-lg="reversed ? 'last' : ''"
+              :order-md="reversed ? 'last' : ''"
               class="align-content-center"
               cols="12"
               lg="6"

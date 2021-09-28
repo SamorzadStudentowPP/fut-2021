@@ -27,13 +27,6 @@ export default {
               'Damy Wam okazję do rozpoczęcia swojej przygody ze studiami w najlepszej możliwej formie. Rozmaite atrakcje i aktywności, niezapomniane przeżycia oraz przede wszystkim zabawa do białego rana – a to nie wszystko co dla Was przygotowaliśmy.',
           src: 'university/wtch.jpg',
           polaroid_text: 'Karpicko 2019',
-          reversed: false,
-        },
-        {
-          text:
-              'Nie zdradzimy Wam na razie szczegółów, ale nie martwcie się! Organizujemy obóz już od wielu lat, więc wiemy, co robimy. Będziecie również mieli okazję skorzystać ze szkoleń, które okażą się bardzo przydatne na początku studiów.',
-          src: 'university/wtch.jpg',
-          polaroid_text: 'Karpicko 2019',
           reversed: true,
         },
       ],
