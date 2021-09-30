@@ -39,23 +39,29 @@ export default {
           'Jest to obóz adaptacyjny Politechniki Poznańskiej, który w najlepszy sposób przygotuje Was do wejścia w nowy etap życia - studia. ' +
           'Wszystko zorganizowane jest przez studentów dla studentów - czyli przez Samorząd Studentów Politechniki Poznańskiej dla nowych studentów.',
       card1: {
-        title: 'Jedyna taka okazja!',
+        title: 'Mertoryczne szkolenia',
         text:
-            'Czy wiesz, że na Karpicko możesz zapisać się tylko jeden raz? Na samym obozie będą tylko studenci, którzy po raz pierwszy rekrutują się na naszą politechnikę! Jest to niepowtarzalna okazja by poznać znajomości na lata!',
-        icon: 'stopwatch_dark.svg',
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ' +
+            'facilisis, ipsum in suscipit ultricies, leo ligula laoreet mi, sit amet ' +
+            'mollis massa justo eget sapien. Phasellus quis consequat justo. Nulla ' +
+            'elementum mattis dapibus.',
+        icon: 'icon_presentation.png'
       },
       card2: {
-        title: 'Nowe znajomości',
+        title: 'Pełni pasji ludzie',
         text:
-            'Będziecie mieli możliwość poznać zarówno innych pierwszorocznych studentów, którzy tak jak Wy po raz pierwszy przekraczają mury Uczelni, ale także starszych kolegów z Samorządu Studentów, którzy wprowadzą Was w tajniki życia studenckiego. ',
-        icon: 'users_dark.svg',
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ' +
+            'facilisis, ipsum in suscipit ultricies, leo ligula laoreet mi.',
+        icon: 'icon_people.png'
       },
       card3: {
-        title: 'Niezapomniane chwile',
+        title: 'Poznań miasto doznań',
         text:
-            'Chwile na Karpicku pozostaną na lata! Najlepsze wspomnienia, których z zazdrością będą wysłuchiwać osoby, które nie zdecydowały się pojechać na obóz. Sięgnij z nami po dozę wrażeń oraz nowych przyjaźni. Nie może Cię zabraknąć!\n',
-        icon: 'hourglass_dark.svg',
-      },
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ' +
+            'facilisis, ipsum in suscipit ultricies, leo ligula laoreet mi, sit amet ' +
+            'mollis massa justo eget sapien. Phasellus quis consequat justo. Nulla ',
+        icon: 'icon_city.png'
+      }
     };
   },
 };

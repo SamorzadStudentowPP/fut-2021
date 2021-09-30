@@ -3,10 +3,11 @@
     <v-container fluid>
       <component-title class="mb-10 mt-5" text="O Politechnice Poznańskiej"/>
       <polaroid-section
-          :polaroid_text="sections[0].polaroid_text"
-          :reversed="sections[0].reversed"
-          :src="sections[0].src"
-          :text="sections[0].text"
+          v-for="(item, index) in sections" :key="index"
+          :polaroid_text="item.polaroid_text"
+          :reversed="item.reversed"
+          :src="item.src"
+          :text="item.text"
       />
     </v-container>
   </div>
@@ -24,11 +25,20 @@ export default {
       sections: [
         {
           text:
-              'Nie zdradzimy Wam na razie szczegółów, ale nie martwcie się! Organizujemy obóz już od wielu lat, więc wiemy, co robimy. Będziecie również mieli okazję skorzystać ze szkoleń, które okażą się bardzo przydatne na początku studiów.',
+              'Politechnika Poznnańska to jedna z najlepszych uczelni technicznych w kraju oraz lider uniwersytetu europejskiego EUNICE.' +
+              'Prowadzi kształcenie na 9 wydziałach i ponad 30 kierunkach, również w języku angielskim, na których uczęszcza ponad 16 000 studentów studiów I i II stopnia, studiów doktoranckich oraz podyplomowych.',
           src: 'university/wtch.jpg',
-          polaroid_text: 'Karpicko 2019',
+          polaroid_text: 'Budynek Wydziału Technologii Chemicznej PP',
           reversed: false,
         },
+        {
+          text:
+              'Uczelnia poprzez realizacje swojej misji zapewnia zarówno jakość kształcenia, jak i przeprowadzenie prac naukowych oraz badawczo-rozwojowych na najwyższym, europejskim poziomie..',
+          src: 'university/pp.jpg',
+          polaroid_text: 'Centrum wykładowe Politechniki Poznańskiej',
+          reversed: true,
+        },
+
       ],
     };
   },

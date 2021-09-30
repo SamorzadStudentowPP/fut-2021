@@ -6,7 +6,7 @@
         <v-card-text class="text-center">
           <v-avatar class="justify-center text-center " size="250">
             <img
-                :src="require(`@/assets/university/${avatar}`)"
+                :src="require(`@/assets/crew/${avatar}`)"
                 class="text-center justify-center"
             />
           </v-avatar>
@@ -32,8 +32,8 @@ export default {
   data() {
     return {
       name: 'Bartosz Cieślewicz',
-      phone: '+48 123 456 789',
-      avatar: 'pp.jpg',
+      phone: '+48 664 662 143',
+      avatar: 'Cieslewicz.jpg',
     };
   },
 

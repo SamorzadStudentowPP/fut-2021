@@ -24,9 +24,12 @@ export default {
       sections: [
         {
           text:
-              'Zakwaterowani będziecie w czteroosobowych domkach w Karpicku, niedaleko Jeziora Wolsztyńskiego, nad którym również przygotowane są atrakcje. Dla tych, którzy kochają naturę znajdą się miejsca na rozłożenie kocyka na trawie. Natomiast Ci którzy cenią sobie wygodne miejsce do integracji z nowopoznanymi znajomymi, mogą zrelaksować się w strefie chillu.',
-          src: 'karpicko_2019_sm.jpg',
-          polaroid_text: 'Karpicko 2019',
+              'Uczestnicy zostaną zakwaterowani w 4-gwiazdkowym Hotelu Mercure Poznań Centrum, który znajduje się przy rondzie Kaponiera, w bliskiej odległości od dworca PKP Poznań Główny. ' +
+              'Hotel dysponuje przestronnymi, klimatyzowanymi pokojami z bezpłatnym dostępem do internetu, fitnessem i sauną oraz dużym parkingiem. \n \n' +
+              'Hotel Mercure Poznań Centrum - ul. Roosevelta 20' +
+              '60-829 Poznań,\n\n tel.: 61 855 80 00',
+          src: 'accomodation/mercure.jpg',
+          polaroid_text: 'Hotel Mercure, Poznań Centrum',
           reversed: false,
         },
       ],

@@ -1,8 +1,8 @@
 <template>
   <div id="partners">
-    <v-container class="mb-10" fluid>
-      <component-title class=" mt-10" text="Patroni honorowi"/>
-      <v-row align="start" class="mt-10" justify="center" no-gutters>
+    <v-container class="mb-12" fluid>
+      <component-title class=" mt-3" text="Patroni honorowi"/>
+      <v-row align="start" class="mt-2" justify="center" no-gutters>
         <v-col cols="12" lg="10" md="10">
           <v-row align="start" class="mt-10" justify="center" no-gutters>
             <v-col
@@ -18,23 +18,23 @@
           </v-row>
         </v-col>
       </v-row>
-      <component-title class=" mt-10" text="Partnerzy"/>
-      <v-row align="start" class="mt-10" justify="center" no-gutters>
-        <v-col cols="12" lg="10" md="10">
-          <v-row align="start" class="mt-10" justify="center" no-gutters>
-            <v-col
-                v-for="(item, index) in partnerList"
-                :key="index"
-                cols="6"
-                lg="2"
-                md="3"
-                sm="4"
-            >
-              <partner-card :src="item.src"/>
-            </v-col>
-          </v-row>
-        </v-col>
-      </v-row>
+<!--      <component-title class=" mt-10" text="Partnerzy"/>-->
+<!--      <v-row align="start" class="mt-10" justify="center" no-gutters>-->
+<!--        <v-col cols="12" lg="10" md="10">-->
+<!--          <v-row align="start" class="mt-10" justify="center" no-gutters>-->
+<!--            <v-col-->
+<!--                v-for="(item, index) in partnerList"-->
+<!--                :key="index"-->
+<!--                cols="6"-->
+<!--                lg="2"-->
+<!--                md="3"-->
+<!--                sm="4"-->
+<!--            >-->
+<!--              <partner-card :src="item.src"/>-->
+<!--            </v-col>-->
+<!--          </v-row>-->
+<!--        </v-col>-->
+<!--      </v-row>-->
     </v-container>
   </div>
 </template>
@@ -42,11 +42,12 @@
 <script>
 import OrganizerCard from '@/components/Home/partners/OrganizerCard';
 import ComponentTitle from '@/components/shared/ComponentTitle';
-import PartnerCard from '@/components/Home/partners/PartnerCard';
 
 export default {
   name: 'Partners',
-  components: {PartnerCard, ComponentTitle, OrganizerCard},
+  components: {
+    // PartnerCard,
+    ComponentTitle, OrganizerCard},
   data() {
     return {
       honoredList: [

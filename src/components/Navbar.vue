@@ -173,7 +173,6 @@ export default {
         {title: 'Harmonogram', id: '#agenda'},
         {title: 'Zakwaterowanie', id: '#accommodation'},
         {title: 'Koordynator', id: '#coordinator'},
-        {title: 'Ciekawostki', id: '#curiosity'},
         {title: 'Patronaty', id: '#partners'},
       ],
       pages: [],

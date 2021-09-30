@@ -1,12 +1,13 @@
 <template>
   <div id="studentsUnion">
     <v-container fluid>
-      <component-title class="mb-10 mt-5" text="O SSPP"/>
+      <component-title class="mb-10 mt-5" text="O Samorządzie Studentów Politechniki Poznańskiej"/>
       <polaroid-section
-          :polaroid_text="sections[0].polaroid_text"
-          :reversed="sections[0].reversed"
-          :src="sections[0].src"
-          :text="sections[0].text"
+          v-for="(item, index) in sections" :key="index"
+          :polaroid_text="item.polaroid_text"
+          :reversed="item.reversed"
+          :src="item.src"
+          :text="item.text"
       />
     </v-container>
   </div>
@@ -24,12 +25,23 @@ export default {
       sections: [
         {
           text:
-              'Damy Wam okazję do rozpoczęcia swojej przygody ze studiami w najlepszej możliwej formie. Rozmaite atrakcje i aktywności, niezapomniane przeżycia oraz przede wszystkim zabawa do białego rana – a to nie wszystko co dla Was przygotowaliśmy.',
-          src: 'university/wtch.jpg',
-          polaroid_text: 'Karpicko 2019',
+              'Samorząd Studentów Politechniki Poznańskiej w obecnej strukturze funkcjonuje już od półtorej roku.' +
+              ' W ramach całej Uczelnianej Rady Samorządu Studentów działa ponad 100 studentów, podzielonych na 5 komisji programowych.' +
+              ' Dodatkowo pieczę nad działaniem Samorządu sprawuje Zarząd wraz z Konwentem Przewodniczących oraz Komisją Rewizyjną.',
+          src: 'students_union/sspp.jpg',
+          polaroid_text: '',
           reversed: true,
         },
+        {
+          text:
+              'Samorząd co roku organizuje wiele niesamowitych akcji poruszających środowisko studenckie, jak Polibuda Open Air, jednocześnie dbając o jakość kształcenia, w ramach działań takich jak Akcja Ankietyzacja, w ramach której zwiększyło poziom ankietyzacji wśród studentów do ponad 65%.' +
+              'Jednak działanie w ramach uczelni to nie wyszystko. Od kilkunastu lat Samorząd organizuje sztab WOŚP przy Politechice Poznańskiej, będącym jednym z największych sztabów WOŚP w Polsce.',
+          src: 'students_union/samorzad.jpg',
+          polaroid_text: '',
+          reversed: false,
+        },
       ],
+
     };
   },
 };

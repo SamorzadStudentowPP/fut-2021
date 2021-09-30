@@ -34,27 +34,28 @@ export default {
   name: 'Info',
   data() {
     return {
-      info_title: 'Zapraszamy!',
+      info_title: 'Spotkajmy się w sercu wielkopolski!',
       info_text:
-          'Drodzy Studenci Pierwszego Roku! Jest nam szalenie miło zaprosić was do uczestnictwa' +
-          ' w obozie Integracyjno-Szkoleniowym "Karpicko" dla pierwszorocznych studentów Politechniki Poznańskiej, który planowany jest na wrzesień 2021!',
+          'Koleżanki i Koledzy! Jest nam niezmiernie miło zaprosić Was do uczestnictwa w zjeździe Forum Uczelni Technicznych,' +
+          'który odbędzie się od 21 do 24 października 2021 r. w urokliwym, słynącym ze świętomarcińskich rogali oraz trykających się koziołków mieście, w Poznaniu.',
       card1: {
-        title: 'Kiedy?',
-        text: 'Od 6 do 11 września 2021r.',
-        icon: 'icon_calendar_dark.svg',
+        title: 'Mertoryczne szkolenia',
+        text:
+            'W trakcie zjazdu będziesz miał okazję wymienić się doświadczeniami z samorządowcami z całej Polski.',
+        icon: 'icon_presentation.png'
       },
       card2: {
-        title: 'Gdzie?',
+        title: 'Pełni pasji ludzie',
         text:
-            'W ośrodku wypoczynkowym "Jelonek" w Karpicku niedaleko Wolsztyna',
-        icon: 'map-location_dark.svg',
+            'Spędź zjazd ze wspaniałymi ludźmi ze środowiska uczelni technicznych.',
+        icon: 'icon_people.png'
       },
       card3: {
-        title: 'Dlaczego?',
+        title: 'Poznań miasto doznań',
         text:
-            'Karpicko to najlepszy sposób na rozpoczęcie studenckiej przygody!',
-        icon: 'info_dark.svg',
-      },
+            'Poznaj miasto, będące tętniącym sercem wielkopolski.',
+        icon: 'icon_city.png'
+      }
     };
   },
 };

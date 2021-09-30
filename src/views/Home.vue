@@ -8,7 +8,7 @@
     <agenda/>
     <accommodation/>
     <Coordinator/>
-    <opinions/>
+<!--    <opinions/>-->
     <partners/>
   </div>
 </template>
@@ -21,7 +21,6 @@ import Accommodation from '@/components/Home/accommodation/Accommodation';
 import StudentsUnion from '@/components/Home/students_union/StudentsUnion';
 import Partners from '@/components/Home/partners/Partners';
 import Info from '@/components/Home/info/Info.vue';
-import Opinions from '@/components/Home/opinions/Opinions.vue';
 import Agenda from '@/components/Home/agenda/Agenda';
 import University from '@/components/Home/university/University';
 import Coordinator from '@/components/Home/coordinator/Coordinator';
@@ -37,7 +36,7 @@ export default {
     Accommodation,
     Registration,
     HomeHero,
-    Opinions,
+    // Opinions,
     Info,
   },
   metaInfo() {
