@@ -14,11 +14,12 @@
               sm="10"
               xl="6"
           >
-            <h2
-                class="text-sm-h5 text-md-h5 text-lg-h5 text-xl-h5 text-subtitle-1 headline text-center"
+            <h1
+                class="text-h5 font-weight-regular headline text-center text-wrap "
+                v-html="text"
             >
               {{ text }}
-            </h2>
+            </h1>
           </v-col>
           <v-col
               :offset-lg="reversed ? 0 : 1"

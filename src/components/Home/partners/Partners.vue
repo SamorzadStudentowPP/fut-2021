@@ -1,6 +1,23 @@
 <template>
   <div id="partners">
     <v-container class="mb-12" fluid>
+      <component-title class=" mt-3" text="Organizatorzy"/>
+      <v-row align="start" class="mt-2" justify="center" no-gutters>
+        <v-col cols="12" lg="10" md="10">
+          <v-row align="start" class="mt-10" justify="center" no-gutters>
+            <v-col
+                v-for="(item, index) in organisers"
+                :key="index"
+                cols="12"
+                lg="4"
+                md="6"
+                sm="12"
+            >
+              <organizer-card :src="item.src"/>
+            </v-col>
+          </v-row>
+        </v-col>
+      </v-row>
       <component-title class=" mt-3" text="Patroni honorowi"/>
       <v-row align="start" class="mt-2" justify="center" no-gutters>
         <v-col cols="12" lg="10" md="10">
@@ -8,17 +25,41 @@
             <v-col
                 v-for="(item, index) in honoredList"
                 :key="index"
-                cols="10"
-                lg="3"
-                md="4"
-                sm="5"
+                cols="12"
+                lg="4"
+                md="6"
+                sm="12"
             >
               <organizer-card :src="item.src"/>
+            </v-col>
+            <v-col
+                cols="12"
+                lg="12"
+                md="12"
+                sm="12"
+            >
+              <organizer-card :src="'wojewodztwo.jpg'" :is-extra-small="true"/>
             </v-col>
           </v-row>
         </v-col>
       </v-row>
-<!--      <component-title class=" mt-10" text="Partnerzy"/>-->
+      <component-title class=" mt-3 ml-5" text="Sponsorzy" />
+      <v-row align="start" class="mt-2" justify="center" no-gutters>
+        <v-col cols="12" lg="10" md="10">
+          <v-row align="start" class="mt-10" justify="center" no-gutters>
+            <v-col
+                cols="9"
+                lg="9"
+                md="9"
+                sm="9"
+            >
+              <organizer-card :src="'sms_api.png'" :is-extra-extra-small="true"/>
+            </v-col>
+          </v-row>
+        </v-col>
+      </v-row>
+
+      <!--      <component-title class=" mt-10" text="Partnerzy"/>-->
 <!--      <v-row align="start" class="mt-10" justify="center" no-gutters>-->
 <!--        <v-col cols="12" lg="10" md="10">-->
 <!--          <v-row align="start" class="mt-10" justify="center" no-gutters>-->
@@ -50,12 +91,20 @@ export default {
     ComponentTitle, OrganizerCard},
   data() {
     return {
+      organisers: [
+        {
+          src: 'logo_sspp_black_narrow.png',
+        },
+        {
+          src: 'fundacja_pp.jpg'
+        }
+      ],
       honoredList: [
         {
           src: 'pp.png',
         },
         {
-          src: 'logo_sspp_black_narrow.png',
+          src: 'poznan.jpg',
         },
       ],
       partnerList: [

@@ -34,7 +34,7 @@ export default {
   name: 'Countdown',
   mounted() {
     window.setInterval(() => {
-      this.now = Math.trunc((new Date()).getTime() / 1000);
+      this.now = Math.floor((new Date()).getTime() / 1000);
     },1000);
   },
   props: {
@@ -44,28 +44,31 @@ export default {
   },
   data() {
     return {
-      now: Math.trunc((new Date()).getTime() / 1000)
+      now: Math.floor((new Date()).getTime() / 1000)
     };
   },
   computed: {
     dateInMilliseconds() {
-      return Math.trunc(Date.parse(this.date) / 1000);
+      return Math.floor(Date.parse(this.date) / 1000);
     },
     seconds() {
       return (this.dateInMilliseconds - this.now) % 60;
     },
     minutes() {
-      return Math.trunc((this.dateInMilliseconds - this.now) / 60) % 60;
+      return Math.floor((this.dateInMilliseconds - this.now) / 60) % 60;
     },
     hours() {
-      return Math.trunc((this.dateInMilliseconds - this.now) / 60 / 60) % 24;
+      return Math.floor((this.dateInMilliseconds - this.now) / 60 / 60) % 24;
     },
     days() {
-      return Math.trunc((this.dateInMilliseconds - this.now) / 60 / 60 / 24);
+      return Math.floor((this.dateInMilliseconds - this.now) / 60 / 60 / 24);
     }
   },
   filters: {
     two_digits: function (value) {
+      if (isNaN(value)) {
+        return value;
+      }
       if (value < 0) {
         return '00';
       }

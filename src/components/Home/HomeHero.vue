@@ -14,7 +14,7 @@
           </v-row>
           <v-row align="center" justify="center" class="mt-n4">
             <v-col cols="12" lg="3" md="4" sm="6">
-                <countdown date="2021-10-21 12:00:00" />
+                <countdown date="2021-10-21T12:00:00" />
             </v-col>
           </v-row>
         </v-col>

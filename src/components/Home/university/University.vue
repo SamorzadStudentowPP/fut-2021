@@ -25,15 +25,15 @@ export default {
       sections: [
         {
           text:
-              'Politechnika Poznnańska to jedna z najlepszych uczelni technicznych w kraju oraz lider uniwersytetu europejskiego EUNICE.' +
-              'Prowadzi kształcenie na 9 wydziałach i ponad 30 kierunkach, również w języku angielskim, na których uczęszcza ponad 16 000 studentów studiów I i II stopnia, studiów doktoranckich oraz podyplomowych.',
-          src: 'university/wtch.jpg',
-          polaroid_text: 'Budynek Wydziału Technologii Chemicznej PP',
+              'Politechnika Poznańska to jedna z najlepszych uczelni technicznych w kraju oraz lider uniwersytetu europejskiego EUNICE. <br>' +
+              'Prowadzi kształcenie na 9 wydziałach i ponad 30 kierunkach, również w języku angielskim, na które uczęszcza ponad 16 000 studentów studiów I i II stopnia, studiów doktoranckich oraz podyplomowych.',
+          src: 'university/wa_wiz_side_clip.jpg',
+          polaroid_text: 'Budynek Wydziału Architektury i Wydziału Inżynierii Zarządzania',
           reversed: false,
         },
         {
           text:
-              'Uczelnia poprzez realizacje swojej misji zapewnia zarówno jakość kształcenia, jak i przeprowadzenie prac naukowych oraz badawczo-rozwojowych na najwyższym, europejskim poziomie..',
+              'Uczelnia poprzez realizacje swojej misji zapewnia zarówno jakość kształcenia, jak i przeprowadzenie prac naukowych oraz badawczo-rozwojowych na najwyższym, europejskim poziomie.',
           src: 'university/pp.jpg',
           polaroid_text: 'Centrum wykładowe Politechniki Poznańskiej',
           reversed: true,

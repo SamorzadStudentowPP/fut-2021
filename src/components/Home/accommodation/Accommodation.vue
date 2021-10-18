@@ -24,10 +24,10 @@ export default {
       sections: [
         {
           text:
-              'Uczestnicy zostaną zakwaterowani w 4-gwiazdkowym Hotelu Mercure Poznań Centrum, który znajduje się przy rondzie Kaponiera, w bliskiej odległości od dworca PKP Poznań Główny. ' +
-              'Hotel dysponuje przestronnymi, klimatyzowanymi pokojami z bezpłatnym dostępem do internetu, fitnessem i sauną oraz dużym parkingiem. \n \n' +
-              'Hotel Mercure Poznań Centrum - ul. Roosevelta 20' +
-              '60-829 Poznań,\n\n tel.: 61 855 80 00',
+              'Uczestnicy zostaną zakwaterowani w 4-gwiazdkowym Hotelu Mercure Poznań Centrum, który znajduje się przy rondzie Kaponiera, w bliskiej odległości od dworca PKP Poznań Główny.<br> ' +
+              'Hotel dysponuje przestronnymi, klimatyzowanymi pokojami z bezpłatnym dostępem do internetu, fitnessem i sauną oraz dużym parkingiem. <br><br>' +
+              'Hotel Mercure Poznań Centrum - ul. Roosevelta 20<br>' +
+              '60-829 Poznań, tel.: 61 855 80 00',
           src: 'accomodation/mercure.jpg',
           polaroid_text: 'Hotel Mercure, Poznań Centrum',
           reversed: false,

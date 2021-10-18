@@ -6,6 +6,7 @@
     <StudentsUnion/>
     <University/>
     <agenda/>
+    <trainers/>
     <accommodation/>
     <Coordinator/>
 <!--    <opinions/>-->
@@ -24,6 +25,7 @@ import Info from '@/components/Home/info/Info.vue';
 import Agenda from '@/components/Home/agenda/Agenda';
 import University from '@/components/Home/university/University';
 import Coordinator from '@/components/Home/coordinator/Coordinator';
+import Trainers from '@/components/Home/trainers/Trainers';
 
 export default {
   name: 'Home',
@@ -31,6 +33,7 @@ export default {
     Coordinator,
     University,
     Agenda,
+    Trainers,
     Partners,
     StudentsUnion,
     Accommodation,

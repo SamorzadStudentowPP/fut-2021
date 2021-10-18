@@ -1,7 +1,7 @@
 <template>
   <div id="coordinator">
     <v-container fluid>
-      <component-title class="mb-5 mt-10" text="Koordynator"/>
+      <component-title class="mb-5 mt-10" text="Koordynator główny zjazdu"/>
       <v-card class="elevation-0 transparent">
         <v-card-text class="text-center">
           <v-avatar class="justify-center text-center " size="250">
@@ -17,7 +17,8 @@
         >
           {{ name }}
         </v-card-title>
-        <v-card-text class="mt-n4 text-center text-sm-body-1 text-md-body-1 text-lg-body-1 text-xl-body-1">{{ phone }}</v-card-text>
+        <v-card-text class="mt-n4 mb-n4 text-center text-sm-body-1 text-md-body-1 text-lg-body-1 text-xl-body-1">{{ phone }}</v-card-text>
+        <v-card-text class="mt-n9 text-center text-sm-body-1 text-md-body-1 text-lg-body-1 text-xl-body-1">{{ email }}</v-card-text>
       </v-card>
     </v-container>
   </div>
@@ -34,6 +35,7 @@ export default {
       name: 'Bartosz Cieślewicz',
       phone: '+48 664 662 143',
       avatar: 'Cieslewicz.jpg',
+      email: 'bartosz.cieslewicz@samorzad.put.poznan.pl'
     };
   },
 

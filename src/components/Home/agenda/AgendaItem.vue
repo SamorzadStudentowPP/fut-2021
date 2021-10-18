@@ -1,7 +1,7 @@
 <template>
   <v-card color="primary" dark>
     <v-card-title class="primary">
-      <h2 class="display-1 white--text font-weight-light">{{ title }}</h2>
+      <h5 class="display-1 white--text font-weight-light text-h5">{{ title }}</h5>
     </v-card-title>
     <v-container class="white text--primary">
       <v-row v-for="(item, index) in dayAgenda" :key="index">

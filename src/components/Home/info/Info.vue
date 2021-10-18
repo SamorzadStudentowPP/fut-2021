@@ -3,7 +3,7 @@
     <v-container fluid>
       <component-title :text="info_title" class="mb-3"/>
       <component-text :text="info_text"/>
-      <v-row align="center" justify="center">
+      <v-row justify="center">
         <icon-section
             :icon="card1.icon"
             :text="card1.text"
@@ -36,12 +36,12 @@ export default {
     return {
       info_title: 'Spotkajmy się w sercu wielkopolski!',
       info_text:
-          'Koleżanki i Koledzy! Jest nam niezmiernie miło zaprosić Was do uczestnictwa w zjeździe Forum Uczelni Technicznych,' +
-          'który odbędzie się od 21 do 24 października 2021 r. w urokliwym, słynącym ze świętomarcińskich rogali oraz trykających się koziołków mieście, w Poznaniu.',
+          'Koleżanki i Koledzy! Jest nam niezmiernie miło zaprosić Was do uczestnictwa w zjeździe Forum Uczelni Technicznych, ' +
+          'który odbędzie się od 21 do 24 października 2021 r. w urokliwym, słynącym ze świętomarcińskich rogali oraz trykających się koziołków mieście, Poznaniu.',
       card1: {
-        title: 'Mertoryczne szkolenia',
+        title: 'Merytoryczne szkolenia',
         text:
-            'W trakcie zjazdu będziesz miał okazję wymienić się doświadczeniami z samorządowcami z całej Polski.',
+            'W trakcie zjazdu będziesz mieć okazję wymienić się doświadczeniami z samorządowcami z całej Polski oraz wziąć udział w jednym z trzech paneli szkoleniowych.',
         icon: 'icon_presentation.png'
       },
       card2: {
@@ -53,7 +53,7 @@ export default {
       card3: {
         title: 'Poznań miasto doznań',
         text:
-            'Poznaj miasto, będące tętniącym sercem wielkopolski.',
+            'Poznaj miasto, będące tętniącym sercem Wielkopolski.',
         icon: 'icon_city.png'
       }
     };
